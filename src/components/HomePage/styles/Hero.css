@@ -1,0 +1,63 @@
+.hero-conatiner {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-img-container {
+    background-color: red;
+}
+
+.hero-img {
+    display: block;
+    width: 100%;
+}
+
+.booking {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 20px;
+    background-color: tomato;
+    position: absolute;
+    bottom: 10%;
+}
+
+.select-destination {
+    width: 250px;
+    height: 80px;
+    padding: 20px;
+    outline: none;
+}
+
+.check-in {
+    width: 150px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.check-out {
+    width: 150px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.btn-book {
+    width: 150px;
+    height: 80px;
+    background-color: white;
+    border: none;
+    outline: none;
+}
+
+.check-in, .check-out, .destination-container, .btn-container {
+    display: flex;
+}
