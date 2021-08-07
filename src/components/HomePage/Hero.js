@@ -14,7 +14,7 @@ function Hero() {
                         <option value="Delhi" className="option-destination">Delhi</option>
                         <option value="Mumbai" className="option-destination">Mumbai</option>
                         <option value="Rajasthan" className="option-destination">Rajasthan</option>
-                        <option value="Kerela" className="option-destination">Kerela</option>
+                        <option value="Kerela" className="option-destination">Kerala</option>
                     </select>
                 </div>
                 <div className="check-in">

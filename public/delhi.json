@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "title":"Superior 6 Bed Mixed Dorm",
+        "price":599,
+        "description":"A bed in Superior 6 Bed Mixed Dorm. (Ensuite) [ Meals purchasable at the property @INR 500/day/adult if you're booking a long-stay of 7 nights or more]",
+        "image":"https://gos3.ibcdn.com/390955e44fbc11e9aea10242ac110003.jpg"
+    },
+    {
+        "id":2,
+        "title":"Superior 8 Bed Mixed Dorm",
+        "price":499,
+        "description":"A bed in Superior 8 Bed Mixed Dorm. (Ensuite) [ Meals purchasable at the property @INR 500/day/adult if you're booking a long-stay of 7 nights or more]",
+        "image":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/281002453.jpg?k=e40d81811a4469391ba436c73ad2db450e85981b4b21db79010f884d8b2a9f71&o=&hp=1"
+    },
+    {
+        "id":3,
+        "title":"Designer Suite",
+        "price":2499,
+        "description":"A Designer Suite with double bed. [ Meals purchasable at the property @INR 500/day/adult if you're booking a long-stay of 7 nights or more]",
+        "image":"https://img.cdn.zostel.com/cache/_2f6b1fc9f0e370b4e810e307383db766/022_PrivateRoom_01_1000x800.jpg"
+    },
+    {
+        "id":4,
+        "title":"Deluxe Twin Room (AC)",
+        "price":1999,
+        "description":"A Deluxe Twin Room (AC) with twin beds. [ Meals purchasable at the property @INR 500/day/adult if you're booking a long-stay of 7 nights or more] NOTE: Limited inventory of this room type is dedicated for quarantine purposes as well. WhatsApp us on +91-9599407770 to know more.",
+        "image":"https://cdn.zo.xyz/zostel/gallery/images/_QExGa4RTW6LVPC2jLs_tQ/zostel-rishikesh-20-deluxe-private-room-202_MGaL9KP.jpg?w=450"
+    }
+]

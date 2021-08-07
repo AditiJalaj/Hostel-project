@@ -11,7 +11,6 @@ import Footer from './Footer'
 function Home() {
     return (
         <div>
-            
             <Hero />
             <Destinations />
             <Season />

@@ -6,10 +6,7 @@ function Navbar() {
     return (
         <div className="navbar-container">
             <nav className="navbar">
-                <Link to="/">
-                <h1 className="brand">BRANDNAME</h1>
-                </Link>
-                
+               <a href='/'><h1 className="brand">BrandName</h1></a> 
                 <ul className="nav-pills">
                 <Link to ="/">
                     <li className="list-item">
