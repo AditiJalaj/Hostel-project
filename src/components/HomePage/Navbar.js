@@ -5,7 +5,7 @@ function Navbar() {
     return (
         <div className="navbar-container">
             <nav className="navbar">
-                <h1 className="brand">BRANDNAME</h1>
+               <a href='/'><h1 className="brand">BRANDNAME</h1></a> 
                 <ul className="nav-pills">
                     <li className="list-item">
                         <a href="" className="anchor-item">Hostels</a>
