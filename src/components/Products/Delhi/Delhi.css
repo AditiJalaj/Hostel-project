@@ -1,0 +1,30 @@
+.amenities{
+   
+}
+
+.bio{
+   
+}
+
+.flex{
+   
+}
+.stay-card{
+    border:1px solid black;
+    display: flex;
+    padding: 10px;
+    width:60vw;
+}
+.stay-card img{
+    max-width:30vw;
+}
+
+.select{
+    padding: 10px;
+    background-color: rgb(236, 119, 24);
+    font-weight: bolder;
+    color:white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
