@@ -1,0 +1,87 @@
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    padding: 80px 50px 10px 50px;
+    background-color: gray;
+    flex-wrap: wrap;
+}
+
+.brand-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1.2;
+}
+
+.footer-brand-tagline {
+    text-align: start;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 30px;
+    align-items: flex-end;
+    flex: 1;
+}
+
+.socials-logo{
+    background-color: white;
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .socials-logo-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+} */
+
+.footer-pills {
+    display: flex;
+    flex: 2;
+}
+
+.useful-links {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    gap: 20px;
+}
+
+.privacy-links {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    gap: 20px;
+}
+
+.useful-pills, .privacy-pills {
+    text-decoration: none;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    flex: 1.3;
+}
+
+.copyright-container {
+   padding-top: 40px;
+    flex: 1 0 100%;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart-logo{
+    padding: 0 3px;
+}

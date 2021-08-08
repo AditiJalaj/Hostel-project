@@ -15,6 +15,10 @@ function Hero() {
                         <option value="Mumbai" className="option-destination">Mumbai</option>
                         <option value="Rajasthan" className="option-destination">Rajasthan</option>
                         <option value="Kerela" className="option-destination">Kerela</option>
+                        <option value="Leh" className="option-destination">Leh</option>
+                        <option value="Agra" className="option-destination">Agra</option>
+                        <option value="Bir" className="option-destination">Bir</option>
+                        <option value="Mussoorie" className="option-destination">Mussoorie</option>
                     </select>
                 </div>
                 <div className="check-in">

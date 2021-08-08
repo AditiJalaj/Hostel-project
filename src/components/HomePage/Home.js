@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from './Navbar'
 import Hero from './Hero'
 import Destinations from './Destinations'
 import Season from './Season'
@@ -11,7 +10,6 @@ import Footer from './Footer'
 function Home() {
     return (
         <div>
-            <Navbar />
             <Hero />
             <Destinations />
             <Season />

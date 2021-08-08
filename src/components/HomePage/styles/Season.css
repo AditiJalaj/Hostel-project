@@ -26,6 +26,7 @@
     flex-wrap: wrap;
     border-radius: 1.5rem;
     overflow: hidden;
+    box-shadow: 0px 2px 17px 0px hsl(219deg 29% 70% / 50%);
 }
 
 .visit-img {

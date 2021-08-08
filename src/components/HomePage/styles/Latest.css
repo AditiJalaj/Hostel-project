@@ -18,6 +18,10 @@
     height: 500px;
 }
 
+.poster:hover {
+    box-shadow: 2px 3px 10px 3px hsl(219deg 29% 70% / 50%);
+}
+
 .latest-poster {
     margin-left: 300px;
     position: absolute;
@@ -27,8 +31,6 @@
     justify-content: space-between;
     /* flex-wrap: wrap; */
     flex-direction: row;
-    overflow-x: scroll;
-    overflow-y: hidden;
     gap: 30px;
 }
 

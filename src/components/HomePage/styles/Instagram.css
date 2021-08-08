@@ -1,0 +1,55 @@
+.instagram-container {
+    padding-top: 40px;
+}
+
+.instagram-head {
+    text-align: left;
+    padding-left: 40px;
+}
+
+.instagram-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.instagram-card {
+    min-width: 260px;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* flex-wrap: wrap; */
+}
+
+.instagram-img {
+    width: 100%;
+    margin: auto;
+}
+
+.instagram-img-hover {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    width: 235px;
+    height: 235px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.instagram-img:hover + .instagram-img-hover{
+    visibility: visible;
+    transition: 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.insta-logo {
+    opacity: 0.9;
+    filter: invert(1);
+}

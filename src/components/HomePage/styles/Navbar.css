@@ -16,3 +16,49 @@
 .anchor-item {
     text-decoration: none;
 }
+
+.dropdown-item {
+    position: relative;
+}
+
+.dropdown {
+    padding: 100% 0;
+}
+
+.dropdown:hover {
+    border-bottom: 2px solid black;
+}
+
+.dropdown:hover + .hostels-container{
+    display: flex;
+    /* transition: 0.5s linear;
+    transform: translateY(0%); */
+}
+
+.hostels-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    top: 49px;
+    border-radius: 0.2rem;
+    width: 180px;
+    background-color: yellow;
+    display: none;
+}
+
+.hostels-container:hover {
+    display: flex;
+}
+
+.dropdown-destinations-menu {
+    margin: 0 4px;
+    border-bottom: 1px solid black;
+    transition: all .18s linear;
+}
+
+.dropdown-destinations-menu:hover {
+    border-left: 25px solid transparent;
+    background-color: orange;
+    transition: all .18s linear;
+}
