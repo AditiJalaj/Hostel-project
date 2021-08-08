@@ -1,19 +1,22 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import {CartVal} from '../../context/context'
 
-const Each = ({ id, title, price, description, image ,selected,
-  setSelected,
-  count,
-  setCount}) => {
-  //pass count and selected from delhi.js and from delhi component also to Cart
+const Each = ({ id, title, price, description, image}) => {
 
-  const [selectedBtn,setSelectedBtn]=useState(null)
+const [total,setTotal]=useContext(CartVal)
+
+const [selected, setSelected] = useState(false);
+const [count, setCount] = useState(1);
 
   const selectUnit=()=>{
-    setSelectedBtn(id)
-    console.log('id is',id);
+    // setSelectedBtn(id)
+   // console.log('id is',id);
+
     setSelected(true); 
     setCount(1)
+    setTotal(pv=>pv+price)
   }
+
   return (
     <>
       <div className="stay-card">
@@ -31,15 +34,14 @@ const Each = ({ id, title, price, description, image ,selected,
           { ((!selected || count<1) && <button 
             onClick={selectUnit} 
             className="select">Select Unit</button>) 
-          }
-
+          }  
 
           {(selected && count>=1) && (
             <>
-              <button onClick={()=>{setCount(pv=>pv-1)}}
+              <button onClick={()=>{setCount(pv=>pv-1); setTotal(pv=>pv-price)}}
               className="select">-</button>
               {count}
-              <button onClick={()=>{setCount(pv=>pv+1)}}
+              <button onClick={()=>{setCount(pv=>pv+1); setTotal(pv=>pv+price)}}
               className="select">+</button>
             </>
           )}
