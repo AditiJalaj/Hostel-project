@@ -13,28 +13,31 @@ const Delhi = () => {
     //use total from context here
     const [total, setTotal] = useContext(CartVal);
 
+    const [initial_total,setInitalTotal]=useState(total)
     const [showCalendar,setShowCalendar]=useState(false)
     const [startValue,onChangeStart] = useState(new Date());
     const [endValue,onChangeEnd]=useState(new Date());  //use next day here later
 
-    //need differnce between start date and end date and then calculate total and send to cart
-    //difference between start date and end date >=1  logic is startValue.getDate() //8 , endValue.getDate() //8 
-    //but by default charge for 1 day if diff=0
+    const [data,setData]=useState([])
 
     let range=endValue.getDate()-startValue.getDate();
+    //console.log(range*total)
 
+    console.log('total ',total)
+   
     useEffect(()=>{
        if(range===0){
            range=1
        }
-       setTotal(total*range)
+       //there is issue with how total is being calculated here
+       setTotal(initial_total*range) 
        console.log('render')
-       //need the updated total to render in cart also 
+
+       //need the updated total to render in cart also , how to watch for total dependency
     },[range])
     
-    
-    const [data,setData]=useState([])
 
+    
     useEffect(()=>{
         fetch('/delhi.json')
         .then((res)=>{return res.json()})
@@ -49,11 +52,11 @@ const Delhi = () => {
        <h1>Delhi</h1>
        
        <section className="bio">
-       BIO ABOUT ZOSTEL DELHI
+       insert some bio about zostel delhi to be on right
        </section>
 
        <section className='amenities'>
-       <h3>Amenities</h3> 
+       <h3>Amenities - this should go beside bio</h3> 
        <ul>
        <li>Hot water</li>
        <li>Wifi</li>
@@ -90,6 +93,7 @@ const Delhi = () => {
     }
        </section>
 
+       {/* pass range and startdate to cart as props*/}
        <Cart/>
        </div>
         </> );

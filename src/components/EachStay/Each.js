@@ -9,9 +9,6 @@ const [selected, setSelected] = useState(false);
 const [count, setCount] = useState(1);
 
   const selectUnit=()=>{
-    // setSelectedBtn(id)
-   // console.log('id is',id);
-
     setSelected(true); 
     setCount(1)
     setTotal(pv=>pv+price)
